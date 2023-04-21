@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require('lodash');
 
-const homeStartingContent = "Welcome to our app.You can add new note by writing /compose in url ";
+const homeStartingContent = "Welcome to our website.You can add new note by clicking on  + icon ";
 const aboutContent = "A student";
 const contactContent = "Contact us on +91844844448";
 
@@ -23,6 +23,7 @@ app.get("/",function(req,res)
       posts : posts
     });
 });
+
 
 app.get("/about",function(req,res)
 {
